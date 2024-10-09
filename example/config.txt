@@ -1,0 +1,2 @@
+Prefix plugins/PolyFitPlot/example/
+Plugin PolyFitPlot inputfile EBTest.rds outputfile polyfit.pdf
