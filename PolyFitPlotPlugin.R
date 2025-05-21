@@ -28,6 +28,8 @@ for(i in 1:3) {
 ###################################################
 ### code chunk number 34: EBSeq_Vignette.Rnw:713-722
 ###################################################
+#print(str(IsoEBOut))
+write.csv(IsoEBOut$PPMat, paste(outputfile, "csv", sep="."))
 PolyAll=PolyFitPlot(unlist(IsoEBOut$C1Mean), unlist(IsoEBOut$C1EstVar),5)
 lines(log10(IsoEBOut$C1Mean[[1]][PolyFitValue[[1]]$sort]), 
 PolyFitValue[[1]]$fit[PolyFitValue[[1]]$sort],col="yellow",lwd=2)
